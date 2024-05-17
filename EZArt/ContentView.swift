@@ -4,16 +4,18 @@
 //
 //  Created by Kasia Rivers on 5/7/24.
 //
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Image(.palette)
+                .scaledToFit()
                 .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("EZArt")
+                .font(.system(.title, design: .monospaced))
+                .fontWeight(.medium)
+                .frame(minHeight: 75)
         }
         .padding()
     }
