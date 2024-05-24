@@ -7,6 +7,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     //    @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
     
     //    @State var shouldShowOnboarding: Bool = true
@@ -19,38 +20,24 @@ struct ContentView: View {
     //                .fontWeight(.medium)
     //                .frame(minHeight: 75)
     //        }
-    @State var promptManager: PromptManager
     
-    init(prompts: [Prompt]) {
-        promptManager = PromptManager(prompts: prompts)
-    }
+    @State private var promptManager = PromptManager()
     
     var body: some View {
         
         TabView {
             VStack {
-                if let prompt = promptManager.currentPrompt {
-                    Text(prompt.text)
+                if let currentPrompt = promptManager.currentPrompt {
+                    Text(currentPrompt.text)
                         .font(.largeTitle)
                         .padding()
                 } else {
-                    Text("No more prompts available.")
+                    Text("Loading...")
                         .font(.largeTitle)
                         .padding()
                 }
-                
-                //                Button(action: {
-                //                    promptManager.displayNextPrompt()
-                //                }) {
-                //                    Text("Next Prompt")
-                //                        .font(.title)
-                //                        .padding()
-                //                        .background(Color.blue)
-                //                        .foregroundColor(.white)
-                //                        .cornerRadius(10)
-                //                }
-                
             }
+            
             .padding()
             .tabItem { Label("Home", systemImage: "house") }
         }
@@ -61,13 +48,6 @@ struct ContentView: View {
     }
 }
 
-
 #Preview {
-    ContentView(
-        prompts: [
-            Prompt(text: "personify the sun"),
-            Prompt(text: "i hate this shit"),
-            Prompt(text: "kill me right fucking now")
-        ]
-    )
+    ContentView()
 }
