@@ -11,7 +11,9 @@ import SwiftUI
 struct EZArtApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(
+                prompts: [Prompt(text: "adfa")]
+            )
         }
     }
 }

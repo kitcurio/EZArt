@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		640A3EF22BFF8CED00B4F758 /* PromptManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A3EF12BFF8CED00B4F758 /* PromptManager.swift */; };
+		640A3EFA2BFF96E200B4F758 /* Prompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A3EF92BFF96E200B4F758 /* Prompts.swift */; };
+		641CCEC32BFA671300830581 /* LoadScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641CCEC22BFA671300830581 /* LoadScreen.swift */; };
 		642C504A2BEA829F007FECBD /* EZArtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642C50492BEA829F007FECBD /* EZArtApp.swift */; };
 		642C504C2BEA829F007FECBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642C504B2BEA829F007FECBD /* ContentView.swift */; };
 		642C504E2BEA82A1007FECBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 642C504D2BEA82A1007FECBD /* Assets.xcassets */; };
 		642C50512BEA82A1007FECBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 642C50502BEA82A1007FECBD /* Preview Assets.xcassets */; };
+		648B38CB2BFE36D1009C3F53 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648B38CA2BFE36D1009C3F53 /* Onboarding.swift */; };
+		648B38CF2BFE3A09009C3F53 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648B38CE2BFE3A09009C3F53 /* Notifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		640A3EF12BFF8CED00B4F758 /* PromptManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptManager.swift; sourceTree = "<group>"; };
+		640A3EF92BFF96E200B4F758 /* Prompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompts.swift; sourceTree = "<group>"; };
+		641CCEC22BFA671300830581 /* LoadScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadScreen.swift; sourceTree = "<group>"; };
 		642C50462BEA829F007FECBD /* EZArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		642C50492BEA829F007FECBD /* EZArtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZArtApp.swift; sourceTree = "<group>"; };
 		642C504B2BEA829F007FECBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		642C504D2BEA82A1007FECBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		642C50502BEA82A1007FECBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		648B38CA2BFE36D1009C3F53 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		648B38CE2BFE3A09009C3F53 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		640A3EF02BFF8CE100B4F758 /* Prompts */ = {
+			isa = PBXGroup;
+			children = (
+				640A3EF12BFF8CED00B4F758 /* PromptManager.swift */,
+				640A3EF92BFF96E200B4F758 /* Prompts.swift */,
+			);
+			path = Prompts;
+			sourceTree = "<group>";
+		};
 		642C503D2BEA829F007FECBD = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +70,14 @@
 		642C50482BEA829F007FECBD /* EZArt */ = {
 			isa = PBXGroup;
 			children = (
+				640A3EF02BFF8CE100B4F758 /* Prompts */,
 				642C50492BEA829F007FECBD /* EZArtApp.swift */,
 				642C504B2BEA829F007FECBD /* ContentView.swift */,
+				641CCEC22BFA671300830581 /* LoadScreen.swift */,
 				642C504D2BEA82A1007FECBD /* Assets.xcassets */,
 				642C504F2BEA82A1007FECBD /* Preview Content */,
+				648B38CA2BFE36D1009C3F53 /* Onboarding.swift */,
+				648B38CE2BFE3A09009C3F53 /* Notifications.swift */,
 			);
 			path = EZArt;
 			sourceTree = "<group>";
@@ -137,8 +160,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				648B38CF2BFE3A09009C3F53 /* Notifications.swift in Sources */,
 				642C504C2BEA829F007FECBD /* ContentView.swift in Sources */,
 				642C504A2BEA829F007FECBD /* EZArtApp.swift in Sources */,
+				640A3EFA2BFF96E200B4F758 /* Prompts.swift in Sources */,
+				648B38CB2BFE36D1009C3F53 /* Onboarding.swift in Sources */,
+				641CCEC32BFA671300830581 /* LoadScreen.swift in Sources */,
+				640A3EF22BFF8CED00B4F758 /* PromptManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
