@@ -5,6 +5,7 @@
 //  Created by Kasia Rivers on 5/7/24.
 //
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
     
@@ -21,30 +22,36 @@ struct ContentView: View {
     //                .frame(minHeight: 75)
     //        }
     
-    @State private var promptManager = PromptManager()
+    @Environment(\.modelContext) var modelContext
+    @State private var path = [TextEntry]()
+    @Query var textSubmissions: [TextEntry]
     
     var body: some View {
-        
-        TabView {
-            VStack {
-                if let currentPrompt = promptManager.currentPrompt {
-                    Text(currentPrompt.text)
-                        .font(.largeTitle)
-                        .padding()
-                } else {
-                    Text("Loading...")
-                        .font(.largeTitle)
-                        .padding()
+        NavigationStack(path: $path) {
+            List {
+                ForEach(textSubmissions) { textentry in
+                    NavigationLink(value: textentry) {
+                        Text(textentry.name)
+                    }
                 }
             }
-            
-            .padding()
-            .tabItem { Label("Home", systemImage: "house") }
+            .navigationTitle("Daily")
+            .navigationDestination(for:
+                                    TextEntry.self) { textentry in EditTextEntryView(textentry: textentry)
+            }
+                                    .toolbar {
+                                        Button("Add text", systemImage: "plus", action: addTextEntry)
+                                    }
         }
         
         //            .fullScreenCover(isPresented: $shouldShowOnboarding, content: {
         //                OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
         //            })
+    }
+    func addTextEntry() {
+        let textentry = TextEntry(name: "", emailAddress: "", details: "")
+        modelContext.insert(textentry)
+        path.append(textentry)
     }
 }
 
