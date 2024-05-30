@@ -10,9 +10,10 @@ import SwiftUI
 
 struct PromptView: View {
     @State private var promptManager = PromptManager()
+    @State private var isPresented: Bool = false
     
     var body: some View {
-       ZStack {
+        ZStack {
             Image("paperBG")
                 .resizable()
                 .scaledToFill()
@@ -30,11 +31,16 @@ struct PromptView: View {
                         .padding()
                 }
                 
+//                Button("Press me"){
+//                    isPresented.toggle()
+//                }
+//                    .fullScreenCover(isPresented: $isPresented, content:
+//                                        AddPhotoView.init)
             }
         }
     }
+    
 }
-
 #Preview {
     PromptView()
 }

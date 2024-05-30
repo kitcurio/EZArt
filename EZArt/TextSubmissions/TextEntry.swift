@@ -14,13 +14,11 @@ class TextEntry {
     //structs have transferrable data unlike structs
     //classes over structs
     var name: String
-    var emailAddress: String
     var details: String
     //OPTIONAL BECAUSE IT DOESN'T HAVE A VALUE INITIALLY
     
-    init(name: String, emailAddress: String, details: String) {
+    init(name: String, details: String) {
         self.name = name
-        self.emailAddress = emailAddress
         self.details = details
     }
        

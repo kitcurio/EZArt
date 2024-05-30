@@ -1,25 +1,35 @@
 //
-//  EditText.swift
-//  EZArt
+//  EditPersonView.swift
+//  FaceApp
 //
-//  Created by Kasia Rivers on 5/28/24.
+//  Created by Lizmary Fernandez on 4/14/24.
 //
 
-import Foundation
 import SwiftData
 import SwiftUI
 
 struct EditTextEntryView: View {
+    @Environment (\.modelContext) var modelContext
+    @Binding var navigationPath: NavigationPath
     @Bindable var textentry: TextEntry
+    
+//    @Query(sort: [
+//        SortDescriptor(\Event.name),
+//        SortDescriptor(\Event.location)
+//    ]) var events: [Event]
     
     var body: some View {
         Form {
             Section {
-                TextField("Type", text: $textentry.name)
+                //                //
+                TextField("Name", text: $textentry.name)
                     .textContentType(.name)
+                //tells ios to use auto-completion when typing a name
+            
+       
             }
         }
-        .navigationTitle("Edit Text")
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
+
+
