@@ -5,49 +5,61 @@
 //  Created by Kasia Rivers on 5/7/24.
 //
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
     
-    //    @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
     
-    //    @State var shouldShowOnboarding: Bool = true
-    //        VStack {
-    //            Image(.palette)
-    //                .scaledToFit()
-    //                .imageScale(.large)
-    //            Text("EZArt")
-    //                .font(.system(.title, design: .monospaced))
-    //                .fontWeight(.medium)
-    //                .frame(minHeight: 75)
-    //        }
+    @Environment(\.modelContext) var modelContext
+    @State private var path = NavigationPath()
     
+    @State private var sortOrder = [SortDescriptor(\TextEntry.name)]
+    @State private var searchText = ""
     @State private var promptManager = PromptManager()
     
     var body: some View {
-        
         TabView {
-            VStack {
-                if let currentPrompt = promptManager.currentPrompt {
-                    Text(currentPrompt.text)
-                        .font(.largeTitle)
-                        .padding()
-                } else {
-                    Text("Loading...")
-                        .font(.largeTitle)
-                        .padding()
+            Group {
+                PromptView()
+                    .tabItem {
+                        Label("Home", systemImage: "house")
+                    }
+//                    .toolbarBackground(.visible, for: .tabBar)
+//                    .toolbarBackground(.indigo, for: .tabBar)
+//                    .toolbarColorScheme(.dark, for: .tabBar)
+                
+                NavigationStack(path: $path) {
+                    TextSubmissionView(searchString: searchText, sortOrder: sortOrder)
+                        .navigationTitle("Write")
+                        .navigationDestination(for: TextEntry.self) { textentry in EditTextEntryView(navigationPath: $path, textentry: textentry)
+                        }
+                        .toolbar {
+                            Menu("Sort", systemImage: "arrow.up.arrow.down") {
+                                Picker("Sort", selection: $sortOrder) {
+                                    Text("Name (A-Z)")
+                                        .tag([SortDescriptor(\TextEntry.name)])
+                                    Text("Name (Z-A)")
+                                        .tag([SortDescriptor(\TextEntry.name, order: .reverse)])
+                                }
+                            }
+                            Button("Add Text", systemImage: "plus", action: addTextEntry)
+                        }
+                        .searchable(text: $searchText)
+                    
+                }
+                .tabItem{
+//                    Label("Gallery", systemImage: "photo.artframe")
+                    Label("Write", systemImage: "pencil")
+                
                 }
             }
-            
-            .padding()
-            .tabItem { Label("Home", systemImage: "house") }
         }
-        
-        //            .fullScreenCover(isPresented: $shouldShowOnboarding, content: {
-        //                OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
-        //            })
+    }
+    
+    func addTextEntry() {
+        let textentry = TextEntry(name: "", details: "")
+        modelContext.insert(textentry)
+        path.append(textentry)
     }
 }
 
-#Preview {
-    ContentView()
-}

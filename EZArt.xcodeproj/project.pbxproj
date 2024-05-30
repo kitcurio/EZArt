@@ -10,6 +10,13 @@
 		640A3EF22BFF8CED00B4F758 /* PromptManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A3EF12BFF8CED00B4F758 /* PromptManager.swift */; };
 		640A3EFA2BFF96E200B4F758 /* Prompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A3EF92BFF96E200B4F758 /* Prompts.swift */; };
 		640A3F1E2C00CF6B00B4F758 /* prompts.json in Resources */ = {isa = PBXBuildFile; fileRef = 640A3F1D2C00CF6B00B4F758 /* prompts.json */; };
+		640A3F432C060FF200B4F758 /* Chalkboard-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 640A3F422C060FF200B4F758 /* Chalkboard-Regular.ttf */; };
+		640A3F472C0618A300B4F758 /* EditTextEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A3F462C0618A300B4F758 /* EditTextEntryView.swift */; };
+		640A3F492C061AAB00B4F758 /* TextEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A3F482C061AAB00B4F758 /* TextEntry.swift */; };
+		640A3F4B2C061DE900B4F758 /* PromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A3F4A2C061DE900B4F758 /* PromptView.swift */; };
+		64187E772C0755C600E5BC08 /* EditEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64187E762C0755C600E5BC08 /* EditEvent.swift */; };
+		64187E792C0756A700E5BC08 /* TextSubmissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64187E782C0756A700E5BC08 /* TextSubmissionView.swift */; };
+		64187E7C2C077FD200E5BC08 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64187E7B2C077FD200E5BC08 /* AddPhotoView.swift */; };
 		641CCEC32BFA671300830581 /* LoadScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641CCEC22BFA671300830581 /* LoadScreen.swift */; };
 		642C504A2BEA829F007FECBD /* EZArtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642C50492BEA829F007FECBD /* EZArtApp.swift */; };
 		642C504C2BEA829F007FECBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642C504B2BEA829F007FECBD /* ContentView.swift */; };
@@ -23,6 +30,14 @@
 		640A3EF12BFF8CED00B4F758 /* PromptManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptManager.swift; sourceTree = "<group>"; };
 		640A3EF92BFF96E200B4F758 /* Prompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompts.swift; sourceTree = "<group>"; };
 		640A3F1D2C00CF6B00B4F758 /* prompts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = prompts.json; sourceTree = "<group>"; };
+		640A3F422C060FF200B4F758 /* Chalkboard-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chalkboard-Regular.ttf"; sourceTree = "<group>"; };
+		640A3F442C06102300B4F758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		640A3F462C0618A300B4F758 /* EditTextEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTextEntryView.swift; sourceTree = "<group>"; };
+		640A3F482C061AAB00B4F758 /* TextEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEntry.swift; sourceTree = "<group>"; };
+		640A3F4A2C061DE900B4F758 /* PromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptView.swift; sourceTree = "<group>"; };
+		64187E762C0755C600E5BC08 /* EditEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEvent.swift; sourceTree = "<group>"; };
+		64187E782C0756A700E5BC08 /* TextSubmissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSubmissionView.swift; sourceTree = "<group>"; };
+		64187E7B2C077FD200E5BC08 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
 		641CCEC22BFA671300830581 /* LoadScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadScreen.swift; sourceTree = "<group>"; };
 		642C50462BEA829F007FECBD /* EZArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		642C50492BEA829F007FECBD /* EZArtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZArtApp.swift; sourceTree = "<group>"; };
@@ -49,8 +64,36 @@
 			children = (
 				640A3EF12BFF8CED00B4F758 /* PromptManager.swift */,
 				640A3EF92BFF96E200B4F758 /* Prompts.swift */,
+				640A3F4A2C061DE900B4F758 /* PromptView.swift */,
 			);
 			path = Prompts;
+			sourceTree = "<group>";
+		};
+		640A3F412C060FE100B4F758 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				640A3F422C060FF200B4F758 /* Chalkboard-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		640A3F452C06188800B4F758 /* TextSubmissions */ = {
+			isa = PBXGroup;
+			children = (
+				640A3F462C0618A300B4F758 /* EditTextEntryView.swift */,
+				640A3F482C061AAB00B4F758 /* TextEntry.swift */,
+				64187E762C0755C600E5BC08 /* EditEvent.swift */,
+				64187E782C0756A700E5BC08 /* TextSubmissionView.swift */,
+			);
+			path = TextSubmissions;
+			sourceTree = "<group>";
+		};
+		64187E7A2C077FBF00E5BC08 /* PhotoSubmissions */ = {
+			isa = PBXGroup;
+			children = (
+				64187E7B2C077FD200E5BC08 /* AddPhotoView.swift */,
+			);
+			path = PhotoSubmissions;
 			sourceTree = "<group>";
 		};
 		642C503D2BEA829F007FECBD = {
@@ -72,6 +115,10 @@
 		642C50482BEA829F007FECBD /* EZArt */ = {
 			isa = PBXGroup;
 			children = (
+				64187E7A2C077FBF00E5BC08 /* PhotoSubmissions */,
+				640A3F452C06188800B4F758 /* TextSubmissions */,
+				640A3F442C06102300B4F758 /* Info.plist */,
+				640A3F412C060FE100B4F758 /* Fonts */,
 				640A3EF02BFF8CE100B4F758 /* Prompts */,
 				642C50492BEA829F007FECBD /* EZArtApp.swift */,
 				642C504B2BEA829F007FECBD /* ContentView.swift */,
@@ -151,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				640A3F432C060FF200B4F758 /* Chalkboard-Regular.ttf in Resources */,
 				640A3F1E2C00CF6B00B4F758 /* prompts.json in Resources */,
 				642C50512BEA82A1007FECBD /* Preview Assets.xcassets in Resources */,
 				642C504E2BEA82A1007FECBD /* Assets.xcassets in Resources */,
@@ -168,9 +216,15 @@
 				642C504C2BEA829F007FECBD /* ContentView.swift in Sources */,
 				642C504A2BEA829F007FECBD /* EZArtApp.swift in Sources */,
 				640A3EFA2BFF96E200B4F758 /* Prompts.swift in Sources */,
+				640A3F492C061AAB00B4F758 /* TextEntry.swift in Sources */,
+				640A3F472C0618A300B4F758 /* EditTextEntryView.swift in Sources */,
 				648B38CB2BFE36D1009C3F53 /* Onboarding.swift in Sources */,
+				64187E772C0755C600E5BC08 /* EditEvent.swift in Sources */,
 				641CCEC32BFA671300830581 /* LoadScreen.swift in Sources */,
+				640A3F4B2C061DE900B4F758 /* PromptView.swift in Sources */,
+				64187E7C2C077FD200E5BC08 /* AddPhotoView.swift in Sources */,
 				640A3EF22BFF8CED00B4F758 /* PromptManager.swift in Sources */,
+				64187E792C0756A700E5BC08 /* TextSubmissionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +361,7 @@
 				DEVELOPMENT_TEAM = TUWHXK4PT2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EZArt/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -336,6 +391,7 @@
 				DEVELOPMENT_TEAM = TUWHXK4PT2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EZArt/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct EZArtApp: App {
@@ -13,5 +14,6 @@ struct EZArtApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: TextEntry.self)
     }
 }

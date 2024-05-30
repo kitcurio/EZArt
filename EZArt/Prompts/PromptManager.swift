@@ -2,6 +2,7 @@ import Combine
 import SwiftUI
 import Observation
 
+
 @Observable class PromptManager {
     private(set) var currentPrompt: Prompt?
     private var prompts: [Prompt]
