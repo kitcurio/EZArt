@@ -13,16 +13,12 @@ struct EditTextEntryView: View {
     @Binding var navigationPath: NavigationPath
     @Bindable var textentry: TextEntry
     
-//    @Query(sort: [
-//        SortDescriptor(\Event.name),
-//        SortDescriptor(\Event.location)
-//    ]) var events: [Event]
-    
+
     var body: some View {
         Form {
             Section {
                 //                //
-                TextField("Name", text: $textentry.name)
+                TextField("Type something", text: $textentry.name)
                     .textContentType(.name)
                 //tells ios to use auto-completion when typing a name
             

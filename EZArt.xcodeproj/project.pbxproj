@@ -14,7 +14,6 @@
 		640A3F472C0618A300B4F758 /* EditTextEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A3F462C0618A300B4F758 /* EditTextEntryView.swift */; };
 		640A3F492C061AAB00B4F758 /* TextEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A3F482C061AAB00B4F758 /* TextEntry.swift */; };
 		640A3F4B2C061DE900B4F758 /* PromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A3F4A2C061DE900B4F758 /* PromptView.swift */; };
-		64187E772C0755C600E5BC08 /* EditEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64187E762C0755C600E5BC08 /* EditEvent.swift */; };
 		64187E792C0756A700E5BC08 /* TextSubmissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64187E782C0756A700E5BC08 /* TextSubmissionView.swift */; };
 		64187E7C2C077FD200E5BC08 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64187E7B2C077FD200E5BC08 /* AddPhotoView.swift */; };
 		641CCEC32BFA671300830581 /* LoadScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641CCEC22BFA671300830581 /* LoadScreen.swift */; };
@@ -22,6 +21,8 @@
 		642C504C2BEA829F007FECBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642C504B2BEA829F007FECBD /* ContentView.swift */; };
 		642C504E2BEA82A1007FECBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 642C504D2BEA82A1007FECBD /* Assets.xcassets */; };
 		642C50512BEA82A1007FECBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 642C50502BEA82A1007FECBD /* Preview Assets.xcassets */; };
+		642DBA512C0F575F002DB72E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642DBA502C0F575F002DB72E /* ImagePicker.swift */; };
+		642DBA532C0F6B16002DB72E /* TextListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642DBA522C0F6B16002DB72E /* TextListView.swift */; };
 		648B38CB2BFE36D1009C3F53 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648B38CA2BFE36D1009C3F53 /* Onboarding.swift */; };
 		648B38CF2BFE3A09009C3F53 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648B38CE2BFE3A09009C3F53 /* Notifications.swift */; };
 /* End PBXBuildFile section */
@@ -35,7 +36,6 @@
 		640A3F462C0618A300B4F758 /* EditTextEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTextEntryView.swift; sourceTree = "<group>"; };
 		640A3F482C061AAB00B4F758 /* TextEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEntry.swift; sourceTree = "<group>"; };
 		640A3F4A2C061DE900B4F758 /* PromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptView.swift; sourceTree = "<group>"; };
-		64187E762C0755C600E5BC08 /* EditEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEvent.swift; sourceTree = "<group>"; };
 		64187E782C0756A700E5BC08 /* TextSubmissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSubmissionView.swift; sourceTree = "<group>"; };
 		64187E7B2C077FD200E5BC08 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
 		641CCEC22BFA671300830581 /* LoadScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadScreen.swift; sourceTree = "<group>"; };
@@ -44,6 +44,8 @@
 		642C504B2BEA829F007FECBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		642C504D2BEA82A1007FECBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		642C50502BEA82A1007FECBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		642DBA502C0F575F002DB72E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		642DBA522C0F6B16002DB72E /* TextListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextListView.swift; sourceTree = "<group>"; };
 		648B38CA2BFE36D1009C3F53 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		648B38CE2BFE3A09009C3F53 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,7 +84,6 @@
 			children = (
 				640A3F462C0618A300B4F758 /* EditTextEntryView.swift */,
 				640A3F482C061AAB00B4F758 /* TextEntry.swift */,
-				64187E762C0755C600E5BC08 /* EditEvent.swift */,
 				64187E782C0756A700E5BC08 /* TextSubmissionView.swift */,
 			);
 			path = TextSubmissions;
@@ -92,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				64187E7B2C077FD200E5BC08 /* AddPhotoView.swift */,
+				642DBA502C0F575F002DB72E /* ImagePicker.swift */,
 			);
 			path = PhotoSubmissions;
 			sourceTree = "<group>";
@@ -99,6 +101,7 @@
 		642C503D2BEA829F007FECBD = {
 			isa = PBXGroup;
 			children = (
+				642DBA522C0F6B16002DB72E /* TextListView.swift */,
 				642C50482BEA829F007FECBD /* EZArt */,
 				642C50472BEA829F007FECBD /* Products */,
 			);
@@ -215,11 +218,12 @@
 				648B38CF2BFE3A09009C3F53 /* Notifications.swift in Sources */,
 				642C504C2BEA829F007FECBD /* ContentView.swift in Sources */,
 				642C504A2BEA829F007FECBD /* EZArtApp.swift in Sources */,
+				642DBA512C0F575F002DB72E /* ImagePicker.swift in Sources */,
 				640A3EFA2BFF96E200B4F758 /* Prompts.swift in Sources */,
 				640A3F492C061AAB00B4F758 /* TextEntry.swift in Sources */,
 				640A3F472C0618A300B4F758 /* EditTextEntryView.swift in Sources */,
+				642DBA532C0F6B16002DB72E /* TextListView.swift in Sources */,
 				648B38CB2BFE36D1009C3F53 /* Onboarding.swift in Sources */,
-				64187E772C0755C600E5BC08 /* EditEvent.swift in Sources */,
 				641CCEC32BFA671300830581 /* LoadScreen.swift in Sources */,
 				640A3F4B2C061DE900B4F758 /* PromptView.swift in Sources */,
 				64187E7C2C077FD200E5BC08 /* AddPhotoView.swift in Sources */,
