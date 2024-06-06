@@ -10,7 +10,8 @@ import SwiftUI
 
 struct PromptView: View {
     @State private var promptManager = PromptManager()
-    @State private var isPresented: Bool = false
+    @State private var textSheet: Bool = false 
+    @State private var entries: [String] = []
     
     var body: some View {
         ZStack {
@@ -30,16 +31,42 @@ struct PromptView: View {
                         .font(.largeTitle)
                         .padding()
                 }
-                
-//                Button("Press me"){
-//                    isPresented.toggle()
-//                }
-//                    .fullScreenCover(isPresented: $isPresented, content:
-//                                        AddPhotoView.init)
+
+                HStack {
+                    Button(action: {
+                        textSheet.toggle()
+                    }, label: {
+                        ZStack {
+                            Image("splatBlue")
+                            Image("pencil")
+                                .resizable()
+                                .scaledToFit()
+                        }
+                        .frame(maxWidth: 150, maxHeight: 150)
+                    })
+                    .padding(.trailing)
+                    .sheet(isPresented: $textSheet) {
+                        TextListView()
+                    }
+                    
+                    Button(action: {
+                        
+                    }, label: {
+                        ZStack {
+                            Image("splatYellow")
+                            Image("film")
+                                .resizable()
+                                .scaledToFit()
+                        }
+                        .frame(maxWidth: 150, maxHeight: 150)
+                    })
+                    .padding(.leading)
+                }
             }
         }
     }
     
+
 }
 #Preview {
     PromptView()

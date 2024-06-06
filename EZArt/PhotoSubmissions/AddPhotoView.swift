@@ -1,25 +1,25 @@
+////
+////  AddPhotoView.swift
+////  EZArt
+////
+////  Created by Kasia Rivers on 5/29/24.
+////
 //
-//  AddPhotoView.swift
-//  EZArt
+//import SwiftUI
 //
-//  Created by Kasia Rivers on 5/29/24.
+//struct AddPhotoView: View {
+//    @Environment(\.dismiss) var dismiss
 //
-
-import SwiftUI
-
-struct AddPhotoView: View {
-    @Environment(\.dismiss) var dismiss
-
-    var body: some View {
-        ZStack {
-            Color.primary.edgesIgnoringSafeArea(.all)
-            Button("Dismiss Modal") {
-                dismiss()
-            }
-        }
-    }
-}
-
-#Preview {
-    AddPhotoView()
-}
+//    var body: some View {
+//        ZStack {
+//            Color.primary.edgesIgnoringSafeArea(.all)
+//            Button("Dismiss Modal") {
+//                dismiss()
+//            }
+//        }
+//    }
+//}
+//
+//#Preview {
+//    AddPhotoView()
+//}
