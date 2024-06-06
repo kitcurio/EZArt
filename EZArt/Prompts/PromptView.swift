@@ -46,7 +46,7 @@ struct PromptView: View {
                     })
                     .padding(.trailing)
                     .sheet(isPresented: $textSheet) {
-                        TextListView(entries: $entries)
+                        TextListView()
                     }
                     
                     Button(action: {
