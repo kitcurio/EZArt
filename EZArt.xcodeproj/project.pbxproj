@@ -25,6 +25,7 @@
 		642DBA532C0F6B16002DB72E /* TextListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642DBA522C0F6B16002DB72E /* TextListView.swift */; };
 		648B38CB2BFE36D1009C3F53 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648B38CA2BFE36D1009C3F53 /* Onboarding.swift */; };
 		648B38CF2BFE3A09009C3F53 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648B38CE2BFE3A09009C3F53 /* Notifications.swift */; };
+		69AC7DB42C0F578100E1C51D /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 69AC7DB32C0F578100E1C51D /* Model */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		642DBA522C0F6B16002DB72E /* TextListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextListView.swift; sourceTree = "<group>"; };
 		648B38CA2BFE36D1009C3F53 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		648B38CE2BFE3A09009C3F53 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		69AC7DB32C0F578100E1C51D /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +95,11 @@
 			isa = PBXGroup;
 			children = (
 				64187E7B2C077FD200E5BC08 /* AddPhotoView.swift */,
+<<<<<<< Updated upstream
 				642DBA502C0F575F002DB72E /* ImagePicker.swift */,
+=======
+				69AC7DB32C0F578100E1C51D /* Model */,
+>>>>>>> Stashed changes
 			);
 			path = PhotoSubmissions;
 			sourceTree = "<group>";
@@ -201,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69AC7DB42C0F578100E1C51D /* Model in Resources */,
 				640A3F432C060FF200B4F758 /* Chalkboard-Regular.ttf in Resources */,
 				640A3F1E2C00CF6B00B4F758 /* prompts.json in Resources */,
 				642C50512BEA82A1007FECBD /* Preview Assets.xcassets in Resources */,

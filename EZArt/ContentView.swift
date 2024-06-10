@@ -9,12 +9,21 @@ import SwiftData
 
 struct ContentView: View {
     
+<<<<<<< Updated upstream
     
 //    @Environment(\.modelContext) var modelContext
 //    @State private var path = NavigationPath()
 //    
 //    @State private var sortOrder = [SortDescriptor(\TextEntry.name)]
 //    @State private var searchText = ""
+=======
+    @State var showImagePicker: Bool = false
+    @Environment(\.modelContext) var modelContext
+    @State private var path = NavigationPath()
+    
+    @State private var sortOrder = [SortDescriptor(\TextEntry.name)]
+    @State private var searchText = ""
+>>>>>>> Stashed changes
     @State private var promptManager = PromptManager()
     @State private var entries: [String] = []
     
